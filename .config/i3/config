@@ -250,7 +250,7 @@ bindsym $mod+Shift+Escape mode "$mode_system"
 # bar {
 #         status_command i3status
 # }
-exec --no-startup-id xrandr --output eDP-1 --dpi 110
+exec --no-startup-id xrandr --output eDP-1 --dpi 120
 exec --no-startup-id feh --recursive --bg-fill  $photo
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec --no-startup-id setxkbmap -model pc105 -layout us,gr -option grp:alt_shift_toggle
