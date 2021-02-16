@@ -226,7 +226,7 @@ mode "$mode_gaps_outer" {
         bindsym Escape mode "default"
 }
 
-set $photo = ~/photos/robot-girl.jpg
+set $photo = ~/photos/neon.png
 set $Locker i3lock -i '/home/knucker_/photos/robot-girl.png' && sleep 1
 
 set $mode_system System (l) lock, (e) logout, (s) suspend, (h) hibernate, (r) reboot, (Shift+s) shutdown
