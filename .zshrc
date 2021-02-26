@@ -103,4 +103,4 @@ export PATH=$PATH:$(go env GOPATH)/bin
 
 alias disk-space="ncdu /"
 alias update="sudo pacman -Syyu"
-export XDG_CURRENT_DESKTOP=KDE
+# export XDG_CURRENT_DESKTOP=KDE
