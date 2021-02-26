@@ -253,7 +253,7 @@ bindsym $mod+Shift+Escape mode "$mode_system"
 exec --no-startup-id xrandr --output eDP-1 --dpi 120
 exec --no-startup-id xrandr --output HDMI-2 --same-as DP-1
 exec --no-startup-id feh --recursive --bg-fill  $photo
-exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh --docky
 exec --no-startup-id setxkbmap -model pc105 -layout us,gr -option grp:alt_shift_toggle
 exec --no-startup-id dunst
 exec --no-startup-id xautolock -time 10 -locker i3lock -i $photo &
