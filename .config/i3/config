@@ -226,8 +226,8 @@ mode "$mode_gaps_outer" {
         bindsym Escape mode "default"
 }
 
-set $photo = ~/photos/neon.png
-set $Locker i3lock -i '/home/knucker_/photos/robot-girl.png' && sleep 1
+set $photo = ~/photos/mech.png
+set $Locker i3lock -i '/home/knucker_/photos/mech.png' && sleep 1
 
 set $mode_system System (l) lock, (e) logout, (s) suspend, (h) hibernate, (r) reboot, (Shift+s) shutdown
 mode "$mode_system" {
@@ -252,10 +252,10 @@ bindsym $mod+Shift+Escape mode "$mode_system"
 # }
 exec --no-startup-id xrandr --output eDP-1 --dpi 120
 exec --no-startup-id xrandr --output HDMI-2 --same-as DP-1
-exec --no-startup-id feh --recursive --bg-fill  $photo
+exec --no-startup-id feh --recursive --bg-fill  $PHOTO
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh --docky
 exec --no-startup-id setxkbmap -model pc105 -layout us,gr -option grp:alt_shift_toggle
 exec --no-startup-id dunst
-exec --no-startup-id xautolock -time 10 -locker i3lock -i $photo &
+exec --no-startup-id xautolock -time 10 -locker i3lock -i '/home/knucker_/photos/mech.png'
 
 bindsym Print exec /usr/bin/flameshot & bash -c "sleep 0.5 && /usr/bin/flameshot gui"
