@@ -121,4 +121,4 @@ if [[ $TERM == xterm  ]]; then TERM=xterm-256color; fi
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 alias tmux="tmux -2"
-alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias config='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
